@@ -1,6 +1,6 @@
 # COMP303Starter
 Starter project configuration for my COMP 303 Software Development course at McGill University
-test
+
 For this project to be correctly imported in Eclipse, you need the following configuration:
 
 * [Eclipse Mars.1](https://www.eclipse.org/downloads/index.php) extended with [checkstyle](http://marketplace.eclipse.org/content/checkstyle-plug) and [EclEmma](http://marketplace.eclipse.org/content/eclemma-java-code-coverage);
