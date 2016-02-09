@@ -1,13 +1,16 @@
 package labtest01;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 /**
  * Utility class with a driver program and some 
  * sample items and inventories.
  */
 public final class Driver
 {
-	private static final Item ITEM_CEREAL = new Item("Cereal", 1, 200);
-	private static final Item ITEM_JAM = new Item("Jam", 2, 400);
+	private static final Item ITEM_CEREAL = new Item("Jam", 1, 200);
+	private static final Item ITEM_JAM = new Item("Jam", 2, 200);
 	private static final Item ITEM_BUTTER = new Item("Butter", 3, 250);
 	
 	private static final Item[] ITEMS = { ITEM_CEREAL, ITEM_JAM, ITEM_BUTTER };
@@ -19,9 +22,12 @@ public final class Driver
 	 */
 	public static void main(String[] pArgs)
 	{
+		Arrays.sort(ITEMS);
 		for( Item item : ITEMS )
 		{
-			System.out.println(item.getName());
+			System.out.println(item.getId());
+			System.out.println(item.getPrice());
+			
 		}
 	}
 }

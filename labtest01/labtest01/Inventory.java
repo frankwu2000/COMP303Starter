@@ -55,6 +55,7 @@ public class Inventory
 	 */
 	public void dispose(Item pItem, int pQuantity)
 	{
+		assert aInventory.containsKey(pItem) && pQuantity >= aInventory.get(pItem);
 		int amount = aInventory.get(pItem);
 		amount -= pQuantity;
 		aInventory.put(pItem, amount);
